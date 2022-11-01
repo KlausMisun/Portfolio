@@ -1,0 +1,20 @@
+@use "../utils/functions" as *;
+
+.content
+{
+    margin-top: var(--header-height);
+}
+
+$container-padding: rem(25);
+
+.container-y {
+    padding: $container-padding 0;
+}
+
+.container {
+    padding: $container-padding;
+}
+
+.container-x {
+    padding: 0 $container-padding;
+}

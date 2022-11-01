@@ -1,0 +1,28 @@
+@use "../utils/functions" as *;
+
+.who__am__i {
+    background-color: var(--primary-color);
+
+    p {
+        font-size: rem(18);
+        letter-spacing: rem(1);
+        line-height: rem(24);
+        font-weight: 400;
+    }
+
+    div {
+        display: flex;
+
+        span {
+            display: block;
+            width: rem(125);
+            text-align: center;
+            margin-top: rem(20);
+            padding: rem(15) 0;
+            background-color: var(--secondary-color);
+            border: var(--dark-color) solid rem(1);
+            position: relative;
+            z-index: 100;
+        }
+    }
+}

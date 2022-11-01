@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio to host different project I will explore and try",
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp"
+  },
+  "author": "Massine Mouha",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "autoprefixer": "^10.4.12",
+    "browser-sync": "^2.27.10",
+    "cssnano": "^5.1.13",
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "postcss": "^8.4.16",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  }
+}

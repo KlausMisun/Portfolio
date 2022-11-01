@@ -1,0 +1,10 @@
+@use "sass:math";
+
+// function to turn px to rem
+// @param {number} $px - pixel value
+// @param {number} $context - base font size
+// @return {string} - rem value
+@function rem($px, $context: 16) {
+    @return ($px / $context) * 1rem;
+}
+

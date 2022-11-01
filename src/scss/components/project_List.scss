@@ -1,0 +1,23 @@
+section.projects {
+  .projects_wrapper {
+    display: flex;
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 8px;
+      .card-img {
+        width: 100%;
+      }
+      .card-text {
+        .card-title {
+            font-size: var(--large);
+        }
+        .card-desc {
+            font-size: var(--medium);
+        }
+      }
+    }
+  }
+}

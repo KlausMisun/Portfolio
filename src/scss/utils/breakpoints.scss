@@ -1,0 +1,35 @@
+$breakpoints-up: (
+        medium: 40rem,
+        large: 64rem,
+        xlarge: 87.5rem,
+);
+
+$breakpoints-down: (
+        small: 39.9375rem,
+        medium: 63.9375rem,
+        large: 87.4375rem,
+);
+
+// mixin to handle breakpoints up
+@mixin breakpoint-up($breakpoint) {
+    @if map-has-key($breakpoints-up, $breakpoint) {
+        @media (min-width: map-get($breakpoints-up, $breakpoint)) {
+            @content;
+        }
+    }
+    @else {
+        @error "Unknown breakpoint `#{$breakpoint}`.";
+    }
+}
+
+// mixin to handle breakpoints down
+@mixin breakpoint-down($breakpoint) {
+    @if map-has-key($breakpoints-down, $breakpoint) {
+        @media (max-width: map-get($breakpoints-down, $breakpoint)) {
+            @content;
+        }
+    }
+    @else {
+        @error "Unknown breakpoint `#{$breakpoint}`.";
+    }
+}

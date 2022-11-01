@@ -1,0 +1,23 @@
+@use "../utils/functions" as *;
+
+.banner__container {
+        height: calc(100vh - var(--header-height));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.banner__text {
+    transform: translateY(-50%);
+
+    h1 {
+        font-size: rem(70);
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: rem(30);
+        font-weight: 300;
+        color: var(--secondary-color);
+    }
+}

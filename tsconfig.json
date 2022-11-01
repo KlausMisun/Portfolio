@@ -1,0 +1,8 @@
+{
+  "include": ["src/ts/**/*.ts"],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es5"
+  },
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,25 @@
+:root {
+    --primary: 255,215,0;
+    --secondary: 65,105,225;
+    --danger: 255, 0, 0;
+    --warning: 255, 255, 0;
+    --success: 0, 255, 0;
+    --info: 0, 0, 255;
+    --light: 238, 238, 238;
+    --gray: 179, 179, 179;
+    --dark: 34, 34, 34;
+
+    // color numbers turned into rgb
+    --primary-color: rgb(var(--primary));
+    --secondary-color: rgb(var(--secondary));
+    --danger-color: rgb(var(--danger));
+    --warning-color: rgb(var(--warning));
+    --success-color: rgb(var(--success));
+    --info-color: rgb(var(--info));
+    --light-color: rgb(var(--light));
+    --gray-color: rgb(var(--gray));
+    --dark-color: rgb(var(--dark));
+}
+
+
+
