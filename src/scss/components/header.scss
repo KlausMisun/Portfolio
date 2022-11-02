@@ -4,6 +4,12 @@
 .header {
     display: flex;
     flex-direction: column;
+
+    @include breakpoint-up(large) {
+        flex-direction: row;
+        align-content: center;
+    }
+
     justify-content: center;
     z-index: 999;
 
@@ -25,7 +31,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-
+        align-items: center;
 
         .header__logo {
             font-size: var(--x-large);
@@ -53,27 +59,30 @@
         left: 0;
         right: 0;
         display: flex;
+
         flex-direction: column;
-        gap: rem(20);
+        @include breakpoint-up(large) {
+            position: relative;
+            top: 0;
+            flex-direction: row;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: transparent;
+        }
+
         background: var(--light-color);
 
         padding-left: rem(25);
 
-
         overflow: hidden;
-        max-height: 108px;
+        max-height: rem(130);
         transition: max-height 300ms, border-color 500ms;
         &__link {
-            &:first-child {
-                margin-top: rem(10);
-            }
+            padding: rem(13);
 
-            &:last-child {
-                margin-bottom: rem(10);
-            }
-
-            font-size: var(--medium);
-            font-weight: 500;
+            font-size: 1.1rem;
+            font-weight: 400;
             text-decoration: none;
 
             &:hover {
@@ -88,6 +97,10 @@
     }
 
     .toggle-btn {
+        @include breakpoint-up(large) {
+            display: none;
+        }
+
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -118,6 +131,10 @@
 
     #toggle:not(:checked) ~ &__nav {
         max-height: 0;
+
+        @include breakpoint-up(large) {
+            max-height: rem(1000);
+        }
     }
 }
 
