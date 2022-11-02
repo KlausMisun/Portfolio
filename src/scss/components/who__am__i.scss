@@ -12,17 +12,8 @@
 
     div {
         display: flex;
-
         span {
-            display: block;
-            width: rem(125);
-            text-align: center;
-            margin-top: rem(20);
-            padding: rem(15) 0;
-            background-color: var(--secondary-color);
-            border: var(--dark-color) solid rem(1);
-            position: relative;
-            z-index: 100;
+            margin-top: rem(25);
         }
     }
 }
