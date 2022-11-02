@@ -1,0 +1,28 @@
+@use "../utils/functions" as *;
+@use "../utils/breakpoints" as *;
+
+.skills {
+    display: flex;
+    width: 100%;
+    @include breakpoint-up(large) {
+        flex-direction: row;
+    }
+
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(30);
+
+    .dotnet {
+        background-color: #512BD4;
+        padding: rem(28);
+    }
+
+    img {
+        border: solid 1px var(--secondary-color);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: rem(100);
+        height: rem(100);
+    }
+}
