@@ -1,21 +1,66 @@
+@use "../utils/functions" as *;
+@use "../utils/breakpoints" as *;
+
 section.projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+
   .projects_wrapper {
     display: flex;
+    flex-wrap: wrap;
+    gap: rem(20);
+
+
+    @include breakpoint-up(large) {
+      max-width: calc(345px * 5);
+    }
+
+    justify-content: center;
+
+    padding: rem(10);
 
     .project-card {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      max-width: rem(325);
 
-      gap: 8px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      overflow: hidden;
+      border-radius: rem(10);
+      border: black solid rem(1);
+
       .card-img {
         width: 100%;
       }
+
       .card-text {
+        display: flex;
+        flex-direction: column;
+        padding: rem(20);
+        min-height: rem(250);
         .card-title {
             font-size: var(--large);
+            font-weight: 700;
+            margin-bottom: rem(10);
         }
         .card-desc {
             font-size: var(--medium);
+          letter-spacing: rem(0.75);
+          line-height: rem(20);
+          font-weight: 400;
+        }
+        .card-links {
+          display: flex;
+          width: 100%;
+          padding-top: rem(25);
+          justify-self: flex-end;
+          justify-content: space-between;
+          margin-top: auto;
+          a {
+            padding: 0.65em 1.3em;
+            border-radius: rem(5);
+            cursor: pointer;
+          }
         }
       }
     }
