@@ -21,7 +21,7 @@ function scssTask() {
     // Compile Sass
     return src('src/scss/style.scss', { sourcemaps: true })
         .pipe(sass())
-        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(postcss([autoprefixer()/*, cssnano()*/]))
         .pipe(dest(cssOutput, { sourcemaps: '.' }));
 }
 
