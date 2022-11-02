@@ -1,4 +1,4 @@
-const header = document.querySelector('header');
+const header : HTMLElement = document.querySelector('#pageHeader');
 
 window.addEventListener("scroll", () => {
     if (window.scrollY === 0) {
