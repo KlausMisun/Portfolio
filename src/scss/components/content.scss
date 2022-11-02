@@ -18,3 +18,13 @@ $container-padding: rem(25);
 .container-x {
     padding: 0 $container-padding;
 }
+
+.section-snap {
+    position: absolute;
+    height: 0;
+
+    span {
+        position: absolute;
+        top: calc(var(--inverted-header-height) - 0px);
+    }
+}

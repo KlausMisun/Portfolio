@@ -1,0 +1,40 @@
+.btn {
+    padding: 0.65em 1.15em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.github {
+    --color: var(--dark-color);
+
+    border: 1px solid var(--color);
+    color: var(--color);
+
+    &:hover {
+        background: var(--color);
+        color: var(--light-color);
+    }
+}
+
+.demo {
+    --color: var(--secondary-color);
+    border: 1px solid var(--color);
+    color: var(--color);
+
+    &:hover {
+        background: var(--color);
+        color: var(--light-color);
+    }
+}
+
+.hire {
+    --color: var(--secondary-color);
+    border: 1px solid var(--color);
+    color: var(--color);
+    font-size: var(--large);
+
+    &:hover {
+        background: var(--color);
+        color: var(--light-color);
+    }
+}
